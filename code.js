@@ -1,7 +1,34 @@
+var navElements = undefined;
+var sectionElements = undefined;
+
+function getNavElements() {
+  var idRegex = /^nav-/;
+  var out = [];
+
+  var allElements = document.getElementsByTagName('a');
+  for (var i = 0; i < allElements.length; i++) {
+    if (idRegex.test(allElements[i].id)) {
+      out.push(allElements[i]);
+    }
+  }
+
+  return out;
+}
+
+function getSectionElements() {
+  var out = [];
+
+  for (var i = 0; i < navElements.length; i++) {
+    out.push(document.getElementById(navElements[i].id.replace('nav-', '')));
+  }
+
+  return out;
+}
+
 function navActive(element) {
-  document.getElementById('nav-what').className = '';
-  document.getElementById('nav-why').className = '';
-  document.getElementById('nav-how').className = '';
+  for (var i = 0; i < navElements.length; i++) {
+    navElements[i].className = '';
+  }
 
   if (element) {
     element.className = 'active';
@@ -9,18 +36,26 @@ function navActive(element) {
 }
 
 function load() {
+  navElements = getNavElements();
+  sectionElements = getSectionElements();
+
   document.body.onscroll = function (e) {
-    if (this.scrollY > 800) {
-      if (this.scrollY > 1250) {
-        navActive(document.getElementById('nav-how'));
+    for (var i = 0; i < sectionElements.length; i++) {
+      var offset = 150;
+
+      var currentLimit = sectionElements[i].offsetTop - offset;
+      var nextLimit = sectionElements[i + 1] ? sectionElements[i + 1].offsetTop - offset : 9999;
+
+      if (window.scrollY > currentLimit && window.scrollY < nextLimit) {
+        navActive(navElements[i]);
+
+        break;
       } else {
-        navActive(document.getElementById('nav-why'));
-      }
-    } else {
-      if (this.scrollY > 250) {
-        navActive(document.getElementById('nav-what'));
-      } else {
-        navActive(undefined);
+        if (window.scrollY < currentLimit) {
+          navActive(undefined);
+
+          break;
+        }
       }
     }
   };

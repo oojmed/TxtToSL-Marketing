@@ -11,7 +11,8 @@ html, body {
 }
 
 ul {
-  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
 }
 
 a {
@@ -32,11 +33,22 @@ a:hover {
 .sectionContent {
   padding: 10px;
   padding-bottom: 100px;
+
+  max-width: 600px;
+
+  margin: auto;
+}
+
+.sectionContentNW {
+  padding: 10px 20px;
+  padding-bottom: 100px;
 }
 
 .start,
-#what,
+#services,
+#features,
 #why,
+#who,
 #how,
 .footer {
   text-align: center;
@@ -113,7 +125,20 @@ a:hover {
   box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
 }
 
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.header .header-right a {
+  background-color: #5f5f5f;
+}
+
 .header a {
+  margin: 0 5px;
+
   float: left;
   display: block;
 
@@ -146,12 +171,45 @@ a:hover {
   background-color: blue;
 }
 
-@media only screen and (max-width: 600px) {
+.column {
+  float: left;
+  width: 33%;
+}
+
+.sectionContent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 900px) {
   .header {
     justify-content: flex-start;
   }
 
   .header-right {
-    margin-top: 40px;
+    position: absolute;
+    left: 150px;
+    top: 20px;
+  }
+
+  .header-center {
+    margin-top: 60px;
+
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .header .header-right a {
+    background-color: transparent;
+  }
+
+  .header .header-right a:hover {
+    background-color: #2f2f2f;
+  }
+
+  .column {
+    width: 100%;
   }
 }

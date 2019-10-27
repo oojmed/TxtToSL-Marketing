@@ -26,43 +26,107 @@
   <div class="header">
     <div class="headerContent">
       <a href="#start" class="logo">TxtToSL</a>
+      <div class="header-center">
+        <a id="nav-services" href="#services">Services</a>
+        <a id="nav-features" href="#features">Features</a>
+        <a id="nav-why" href="#why">Why</a>
+        <a id="nav-who" href="#who">Who</a>
+        <a id="nav-how" href="#how">How</a>
+      </div>
       <div class="header-right">
-        <a href="https://app.txttosl.com">App</a>
+        <a style="margin-right: 20px;" href="https://app.txttosl.com">App</a>
         <a href="https://docs.txttosl.com">Docs</a>
-        <a style="pointer-events: none;"> | </a>
-        <a onclick="navActive(this);" id="nav-what" href="#what">What</a>
-        <a onclick="navActive(this);" id="nav-why" href="#why">Why</a>
-        <a onclick="navActive(this);" id="nav-how" href="#how">How</a>
       </div>
     </div>
   </div>
 
-  <div class="start">
+  <div id="start" class="start">
     <div class="startText">
       <h1>TxtToSL</h1>
       <h3>Translate text into sign languages, quick and easy.</h3>
     </div>
   </div>
 
-  <div id="what">
+  <div id="services">
     <div class="sectionHeader">
-      <h1>What?</h1>
+      <h1>Services</h1>
     </div>
 
-    <div class="sectionContent">
-      <p>TxtToSL's services translate <b>text into sign languages</b>. We currently support <b>8</b> sign languages in <b>our API</b>, and <b>6</b> sign languages in <b>our web app</b>. However, they have <b>varying support</b>, as can be seen in the sign language dropdown in <b>TxtToSL Web</b>.</p>
+    <div class="sectionContentNW">
+      <div class="column">
+        <h2>TxtToSL Web</h2>
+        <p>Our web app for using <b>TxtToSL API</b>. It is <a href="https://github.com/oojmed/TxtToSL-Web/">(free and) open source</a>.</p>
+        <p>You can find the app <a href="https://app.txttosl.com">here</a>.</p>
+      </div>
 
-      <p>We offer several services:</p>
+      <div class="column">
+        <p>TxtToSL's services translate <b>text into sign languages</b>.</p>
 
-      <br />
+        <p>We currently support <b>8</b> sign languages in <b>our API</b>, and <b>6</b> sign languages in <b>our web app</b>. However, they have <b>varying support</b>, as can be seen in the sign language dropdown in <b>TxtToSL Web</b>.</p>
+      </div>
 
-      <h2>TxtToSL Web</h2>
-      <p>Our web app for using <b>TxtToSL API</b>. It is <a href="https://github.com/oojmed/TxtToSL-Web/">(free and) open source</a>. You can find the app <a href="https://app.txttosl.com">here</a></a></p>
+      <div class="column">
+        <h2>TxtToSL API</h2>
+        <p>Our API for everything, it is <b>free</b>, but <b>not open source</b>.</p>
+        <p>You can see the docs <a href="https://docs.txttosl.com">here</a>.</p>
+      </div>
+    </div>
+  </div>
 
-      <br/>
+  <div id="features">
+    <div class="sectionHeader">
+      <h1>Features</h1>
+    </div>
 
-      <h2>TxtToSL API</h2>
-      <p>Our API for everything, it is <b>free</b>, but <b>not open source</b>. You can see the docs <a href="https://docs.txttosl.com">here</a>.</p>
+    <div class="sectionContentNW">
+      <h2>TxtToSL API (and Web)</h2>
+
+      <div class="column">
+        <h3><b>Videos</b> of <b>real people</b> signing</h3>
+        <p>Unlike others, we use videos of real people signing, not still pictures or simple drawn animations.</p>
+      </div>
+
+      <div class="column">
+        <h3><b>Free</b> and <b>public</b>, with <b>no rate limiting</b></h3>
+        <p>You won't get any rate limiting problems here.</p>
+      </div>
+
+      <div class="column">
+        <h3><b>Several sign languages</b> in <b>many languages</b></h3>
+        <p>No one else has this many sign languages avaliable.</p>
+      </div>
+
+      <h2 style="margin-top: 200px;">TxtToSL Web</h2>
+
+      <div class="column">
+        <h3>Progressive Web App</h3>
+        <p>Allows the app to be installed onto devices and act like a native app.</p>
+
+        <br/>
+
+        <h3>Open Source</h3>
+        <p>TxtToSL Web is open source, and has many contributors. Being open source allows us to develop and expand more easily whilst recieving help and contributors from the community.</p>
+      </div>
+
+      <div class="column">
+        <h3>Light-weight</h3>
+        <p>After loading, the app only makes requests every hour and when the user translates.</p>
+
+        <br/>
+
+        <h3>A range of options</h3>
+        <p>Choose the video hoster, quality, speed, and more.</p>
+      </div>
+
+      <div class="column">
+        <h3>Simple, responsive, Material Design UI</h3>
+        <p>The accessible UI allows for easy use, no matter the size of the device.</p>
+
+        <br/>
+
+        <h3>Dark Theme</h3>
+        <p>TxtToSL Web was built with dark mode since the start, making it continue to look good whilst being easy on your eyes.</p>
+      </div>
     </div>
   </div>
 
@@ -74,19 +138,16 @@
     <div class="sectionContent">
       <h3 style="margin-bottom: 0.5em;">"I wanted to make a <a href="https://translate.google.com/">Google Translate</a>-like translater. Not always 100% accurate but still alright, as well as easy and simple to use."</h3>
       <h4 style="margin-top: 0;">- Oj, Director of Oojmed</h4>
+    </div>
+  </div>
 
-      <br/>
+  <div id="who">
+    <div class="sectionHeader">
+      <h1>Who?</h1>
+    </div>
 
-      <p>When researching for other similar applications (text to sign language translators), we found that none of them:</p>
-      <ul>
-        <li>Use videos of real people signing</li>
-        <li>Have free, public APIs</li>
-        <li>Are as flexible, with several sign languages avaliable in many languages, and hosting options</li>
-      </ul>
-
-      <br />
-
-      <p>Development is led by <a href="https://oojmed.com">Oojmed, a non-profit software development organisation</a>. All of our code (including this site) except the API / server is open source <a href="https://github.com/oojmed">on our GitHub profile</a>.</p>
+    <div class="sectionContent">
+      <p>Development is led by <a href="https://oojmed.com">Oojmed, a non-profit software development organisation</a>. However, all of our code (including this site) except the API / server is open source <a href="https://github.com/oojmed">on our GitHub profile</a>.</p>
     </div>
   </div>
 
@@ -95,22 +156,36 @@
       <h1>How?</h1>
     </div>
 
-    <div class="sectionContent">
-      <h2>TxtToSL Web - Technologies Used:</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS (+ JQuery)</li>
-        <li><a href="https://material.io/develop/web/">Material Components Web</a></li>
-      </ul>
+    <div class="sectionContentNW">
+      <div class="column">
+        <h2>TxtToSL Web</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS (+ JQuery)</li>
+          <li><a href="https://material.io/develop/web/">Material Components Web</a></li>
+        </ul>
+      </div>
 
-      <h2>TxtToSL API - Technologies Used:</h2>
-      <ul>
-        <li>JS</li>
-        <li><a href="https://nodejs.org">NodeJS</a></li>
-        <li><a href="https://expressjs.com">ExpressJS</a></li>
-        <li><a href="https://python.org">Python</a></li>
-      </ul>
+      <div class="column">
+        <h2>TxtToSL API</h2>
+        <ul>
+          <li>JS</li>
+          <li><a href="https://nodejs.org">NodeJS</a></li>
+          <li><a href="https://expressjs.com">ExpressJS</a></li>
+          <li><a href="https://python.org">Python</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>TxtToSL (API) Docs</h2>
+        <ul>
+          <li>Jekyll</li>
+          <li>HTML</li>
+          <li>SCSS (/ CSS)</li>
+          <li>JS (+ JQuery)</li>
+        </ul>
+      </div>
     </div>
   </div>
 

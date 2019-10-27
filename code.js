@@ -11,7 +11,7 @@ function navActive(element) {
 function load() {
   document.body.onscroll = function (e) {
     if (this.scrollY > 800) {
-      if (this.scrollY > 1350) {
+      if (this.scrollY > 1250) {
         navActive(document.getElementById('nav-how'));
       } else {
         navActive(document.getElementById('nav-why'));

@@ -145,3 +145,13 @@ a:hover {
 .header a.active:hover {
   background-color: blue;
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    justify-content: flex-start;
+  }
+
+  .header-right {
+    margin-top: 40px;
+  }
+}

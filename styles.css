@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #1f1f1f ;
+  color: rgba(255, 255, 255, .87);
+
+  font-family: Roboto, sans-serif !important;
+
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.sectionHeader {
+  background: #2f2f2f;
+}
+
+.sectionContent {
+  padding: 10px;
+  padding-bottom: 100px;
+}
+
+.start,
+#what,
+#why,
+#how,
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+
+  color: rgba(255, 255, 255, .87);
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.start {
+  margin-top: 89px;
+
+  height: 300px;
+
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 200s ease infinite;
+  -z-animation: rainbow 200s ease infinite;
+  -o-animation: rainbow 200s ease infinite;
+  animation: rainbow 200s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+@keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+.headerContent {
+  padding: 20px 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  overflow: hidden;
+  background-color: #3f3f3f;
+
+  z-index: 100;
+
+  -moz-box-shadow: 0px 3px -2px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0px 3px -2px rgba(0, 0, 0, .5);
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+}
+
+.header a {
+  float: left;
+  display: block;
+
+  color: rgba(255, 255, 255, .87);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+
+  position: absolute;
+  left: 10px;
+}
+
+.header a:hover {
+  background-color: #2f2f2f;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+}
+
+.header a.active:hover {
+  background-color: blue;
+}

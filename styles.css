@@ -186,6 +186,18 @@ a:hover {
   clear: both;
 }
 
+.services-main-column-middle {
+  transform: translateY(50%);
+}
+
+.services-main-column-start {
+  display: none;
+}
+
+.features-header {
+  margin-top: 300px;
+}
+
 @media only screen and (max-width: 900px) {
   .header {
     justify-content: flex-start;
@@ -214,6 +226,22 @@ a:hover {
   }
 
   .column {
-    width: 100%;
+    width: 600px;
+    float: none;
+    margin: auto;
+
+    margin-bottom: 50px;
+  }
+
+  .services-main-column-middle {
+    display: none;
+  }
+
+  .services-main-column-start {
+    display: block;
+  }
+
+  .features-header {
+    margin-top: 0;
   }
 }

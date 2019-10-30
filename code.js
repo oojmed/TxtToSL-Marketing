@@ -1,5 +1,6 @@
 var navElements = undefined;
 var sectionElements = undefined;
+var header = undefined;
 
 function getNavElements() {
   var idRegex = /^nav-/;
@@ -38,10 +39,11 @@ function navActive(element) {
 function load() {
   navElements = getNavElements();
   sectionElements = getSectionElements();
+  header = document.getElementsByClassName('header')[0];
 
   document.body.onscroll = function (e) {
     for (var i = 0; i < sectionElements.length; i++) {
-      var offset = 150;
+      var offset = header.offsetHeight + 80;
 
       var currentLimit = sectionElements[i].offsetTop - offset;
       var nextLimit = sectionElements[i + 1] ? sectionElements[i + 1].offsetTop - offset : 9999;

@@ -108,6 +108,8 @@ a:hover {
 }
 
 .header {
+  opacity: 0.98;
+
   display: flex;
   justify-content: flex-end;
 
@@ -204,17 +206,17 @@ a:hover {
   }
 
   .header-right {
-    position: absolute;
-    left: 150px;
-    top: 20px;
+    margin-left: 130px;
   }
 
   .header-center {
-    margin-top: 60px;
+    display: none;
+
+    /*margin-top: 60px;
 
     position: relative;
     left: 0;
-    transform: none;
+    transform: none;*/
   }
 
   .header .header-right a {
@@ -226,7 +228,8 @@ a:hover {
   }
 
   .column {
-    width: 600px;
+    width: auto;
+    max-width: 600px;
     float: none;
     margin: auto;
 

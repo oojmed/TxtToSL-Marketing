@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background-color: #1f1f1f ;
+  background-color: rgb(29, 31, 33);
   color: rgba(255, 255, 255, .87);
 
   font-family: Roboto, sans-serif !important;
@@ -16,32 +16,38 @@ ul {
 }
 
 a {
-  color: #007bff;
+  color: rgb(51, 162, 255);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #0056b3;
+  color: rgb(97, 183, 255);
 }
 
 .sectionHeader {
-  background: #2f2f2f;
+  background: rgb(45, 47, 49);
 }
 
 .sectionContent {
   padding: 10px;
-  padding-bottom: 100px;
 
   max-width: 600px;
 
   margin: auto;
+
+  padding-bottom: 100px;
 }
 
 .sectionContentNW {
   padding: 10px 20px;
+
   padding-bottom: 100px;
+}
+
+.sectionContentNP {
+  padding-bottom: 50px !important;
 }
 
 .start,
@@ -118,7 +124,7 @@ a:hover {
   width: 100%;
 
   overflow: hidden;
-  background-color: #3f3f3f;
+  background-color: rgb(60, 64, 66);
 
   z-index: 100;
 
@@ -139,7 +145,7 @@ a:hover {
 
 
 .header .header-right a {
-  background-color: #5f5f5f;
+  background-color: transparent;
 }
 
 .header a {
@@ -166,15 +172,15 @@ a:hover {
 }
 
 .header a:hover {
-  background-color: #2f2f2f;
+  background-color: rgb(45, 47, 49);
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: rgb(0, 94, 186);
 }
 
 .header a.active:hover {
-  background-color: blue;
+  background-color: rgb(0, 63, 125);
 }
 
 .column {
@@ -197,7 +203,11 @@ a:hover {
 }
 
 .features-header {
-  margin-top: 300px;
+  margin-top: 350px;
+}
+
+.features-header-small {
+  margin-top: 150px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -217,14 +227,6 @@ a:hover {
     position: relative;
     left: 0;
     transform: none;*/
-  }
-
-  .header .header-right a {
-    background-color: transparent;
-  }
-
-  .header .header-right a:hover {
-    background-color: #2f2f2f;
   }
 
   .column {
